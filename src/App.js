@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
 import Search from "./components/Search";
 
-class BooksApp extends React.Component {
+class App extends React.Component {
   state = {
     showSearchPage: false,
     books: [],
@@ -37,6 +37,8 @@ class BooksApp extends React.Component {
     await this.setState({
       search: event.target.value,
     });
+
+    this.handleBooksSearch(this.state.search);
   };
 
   handleBooksSearch = async (search) => {
@@ -84,4 +86,4 @@ class BooksApp extends React.Component {
   }
 }
 
-export default BooksApp;
+export default App;
