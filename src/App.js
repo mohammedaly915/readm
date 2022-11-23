@@ -60,8 +60,7 @@ class BooksApp extends React.Component {
         })
       }
     }); // then
-    console.log("Search");
-    console.log(this.state.booksFromSearch);
+    
   };
 
   render() {
