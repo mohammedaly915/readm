@@ -30,15 +30,13 @@ class BooksApp extends React.Component {
         books: res,
       });
     });
-    this.handleBooksSearch(this.state.search)
+    this.handleBooksSearch(this.state.search);
   };
 
   handleSearch = async (event) => {
     await this.setState({
       search: event.target.value,
     });
-    console.log(this.state.search);
-    this.handleBooksSearch(this.state.search);
   };
 
   handleBooksSearch = async (search) => {
@@ -47,21 +45,19 @@ class BooksApp extends React.Component {
         this.setState({
           booksFromSearch: res.map((booksSearch) => {
             this.state.books.forEach((book) => {
-              if (booksSearch.id === book.id) booksSearch.shelf = book.shelf
-            })
+              if (booksSearch.id === book.id) booksSearch.shelf = book.shelf;
+            });
             return booksSearch;
           }),
-          loadSearch: true
+          loadSearch: true,
         });
       } else {
         this.setState({
           booksFromSearch: `No books like: " ${this.state.search} "`,
-          loadSearch: false
-        })
+          loadSearch: false,
+        });
       }
-    }); // then
-    console.log("Search");
-    console.log(this.state.booksFromSearch);
+    });
   };
 
   render() {
