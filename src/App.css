@@ -1,6 +1,4 @@
-html,
-body,
-.root {
+html, body, .root {
   height: 100%;
 }
 
@@ -8,16 +6,15 @@ body {
   line-height: 1.5;
 }
 
-body,
-.app {
-  background: #acaeb1;
+body, .app {
+  background: #daeafe;
 }
 
 /* main page */
 
 .list-books-title {
   padding: 10px 0;
-  background: #504431;
+  background: #022550;
   text-align: center;
 }
 
@@ -43,7 +40,7 @@ body,
 }
 
 .bookshelf-title {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #a8cffd;
   margin-top: 80px;
 }
 
@@ -62,22 +59,20 @@ body,
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #504431;
-  background-image: url("./icons/add.svg");
+  background: #2e7d32;
+  background-image: url('./icons/add.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 28px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-  line-height: 50px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-size: 0;
   outline: 0;
 }
 
 .open-serch__link:hover {
   background-color: rgb(0, 102, 0);
 }
+
 
 /* search page */
 
@@ -88,7 +83,7 @@ body,
   left: 0;
   z-index: 5;
   display: flex;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 0 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 0 6px rgba(0,0,0,0.23);
 }
 
 .search-books-input-wrapper {
@@ -110,17 +105,13 @@ body,
   left: 15px;
   width: 50px;
   height: 53px;
-  background-image: url("./icons/arrow-back.svg");
+  background-image: url('./icons/arrow-back.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 28px;
-  font-size: 25px;
+  font-size: 0;
   border: none;
   outline: none;
-  color: #000000;
-  text-align: center;
-  line-height: 53px;
-  text-decoration: none;
 }
 
 button:active {
@@ -182,13 +173,11 @@ button:active {
   height: 40px;
   border-radius: 50%;
   background: #60ac5d;
-  background-image: url("./icons/arrow-drop-down.svg");
+  background-image: url('./icons/arrow-drop-down.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  text-align: center;
-  line-height: 40px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .book-shelf-changer select {
@@ -201,7 +190,7 @@ button:active {
 /* book cover */
 
 .book-cover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   background: #eee;
 }
 
@@ -210,3 +199,4 @@ button:active {
   text-align: center;
   font-size: 0.8em;
 }
+

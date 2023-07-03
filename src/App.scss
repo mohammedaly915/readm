@@ -1,0 +1,221 @@
+.App {
+text-align: center;
+}
+
+.App-logo {
+height: 40vmin;
+pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+}
+}
+
+.App-header {
+background-color: #282c34;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: calc(10px + 2vmin);
+color: white;
+}
+
+.App-link {
+color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+/////////======
+.imgo {
+height: 70vh;
+filter:brightness(60%)
+}
+
+
+.caro:hover{
+filter:brightness(40%) blur(2px);
+transition: 0.5s ease-in;
+}
+.caro{
+padding-top: 56px;
+transition: 0.4s ease-out;
+}
+.Register{
+z-index: 100;
+position: absolute;
+transform: translate(50%,-50%);
+}
+.login{
+top:50%;
+right:40%;
+width: 200px;
+}
+.reg{
+top:50%;
+right:60%;
+width: 200px;
+}
+
+.sponser{
+display: grid;
+grid-template-columns: auto auto auto;
+gap:10px;
+grid-template-rows: 100px;
+line-height: 100px;
+height: 30vh;
+    .figure{
+    background-color: rgb(140, 150, 175);
+    color: #264a97;
+    }
+
+}
+
+
+.sales{
+height: 100vh;
+overflow-x: hidden;
+flex-wrap: nowrap !important;
+width: 100%;
+.de_raw{
+    height: 50%;
+    overflow-x: scroll;
+    background: beige;
+    padding: 21px;
+    display: flex;
+    flex-wrap: nowrap;
+    .de_card{
+        align-items: center;
+    }
+}
+}
+
+// height: 100vh;
+// overflow-x: hidden;
+// flex-wrap: nowrap !important;
+// width: 100%;
+// ====
+.sellers{
+    display :flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    .seller{
+        width: 100%;
+        height: 45vh;
+        border-radius: 5px;
+        border: 1px solid #697796;
+        overflow: hidden;
+        
+        .image-cont{
+            display: grid;
+        grid-template-columns: 50% 50%;
+        height :75%;
+        background-color: #fff;
+        place-items: center;
+        color: #000000e6;
+        .image{
+            width: 60%;
+            height:80%;
+            border-radius: 5%;
+        }
+    
+        }
+        .product-cont{
+            width: 100%;
+            height: 25%;
+            background-color: #000000e6;
+            display: grid;
+            color: #fff;
+            
+            .products{
+                display: grid;
+                grid-template-columns: repeat(10,1fr);
+                grid-template-rows: auto;
+                place-items: center;
+                .product{
+                    
+                }
+            }
+            }
+            
+        
+    
+    }
+    .new-seller{
+        height:45vh;
+        background-color: rgb(221, 221, 221);
+        overflow: hidden;
+        .new{
+            .new-image{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .title{
+                    .tit{
+                        color: #264a97;
+                    }
+                    .market{
+                        color: #264a97
+                    }
+                }
+                
+            }
+            .imgs{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .new-rate{
+                }
+            }
+            .new-products{
+                display: grid;
+                grid-template-columns: repeat(10,1fr);
+                place-items: center;
+                overflow-x: hidden;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+// Suggestio & Donation
+
+.suggest{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    
+    }
+.founds{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    
+
+    .found{
+        height: 100px;
+        color: #fff;
+        line-height: 100px;
+        width :100%;
+    }
+}
+
+//     fORM 
+
+.reg_gender{
+    display: inline;
+    padding : 10px
+}
